@@ -7,7 +7,7 @@ Welcome to d4_pr3fl0p_b0t_v2 - the 2nd version of the r1_pr3fl0p_bot (the online
 
 The bot follows the following structure (subject to change).
 
-![](/img/Deck5.png?raw=true)
+![](/img/flowchart.png?raw=true)
 
 ### The bot is limited to:
 * The Pacific Poker (888) software;
