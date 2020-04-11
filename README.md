@@ -19,6 +19,7 @@ The bot follows the following structure (subject to change).
 
 ### Update history:
 * v0.1 - prototype version w/ main function (b0t.py), card detection, position detection and previous action detection. Also preflop hand ranges have been implemented.
+* v0.2 - optimized version of v0.1, yet still requires bug-fixing and testing.
 
 ### Bug report:
 * v0.1 - previous action detection is incorrect (assumes all previous action has been a "fold" if sitting OOP).
