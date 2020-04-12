@@ -98,4 +98,4 @@ def DetectCards(card1, card2, deck):
 
     print(f'My hand is: {CardValue1}{CardValue2}{Suit}')
     
-    return(CardValue1, CardValue2, Suit)
+    return(myHand, handMy)

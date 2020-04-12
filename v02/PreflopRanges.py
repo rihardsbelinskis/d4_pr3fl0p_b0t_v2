@@ -1,7 +1,7 @@
 #from DetectCards import handMy, myHand  <--- currently shows a bug
 import DetectCards
 
-def PreflopRanges(myHand, position):
+def PreflopRanges(myHand, handMy, position):
     UTG_RFI = ('AAo','AKs','AQs','AJs','ATs','A9s','A8s','A7s','A6s','A5s','A4s','A3s','A2s','AKo',
                'KKo','KQs','KJs','KTs','K9s','AQo','KQo','QQo','QJs','QTs','Q9s','AJo','JJo','JTs',
                'J9s','TTo','T9s','99o','98s','88o','87s','77o','76s','66o','55o')

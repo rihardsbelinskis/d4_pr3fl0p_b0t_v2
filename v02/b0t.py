@@ -14,8 +14,28 @@ def main():
 
     card1 = ('card1.png')
     card2 = ('card2.png')
-    deck = ('deck5.png')
-    
+    deck = ('/img/deck5.png')
+   
+    GotCards(card1, card2, deck)
+    if gotCards is None:
+        print("No hand dealt yet.")
+    else:
+        DetectCards(card1, card2, deck)
+        IsPlayable(myHand, handMy)
+        if isPlayable is None:
+            print("Fold this hand.")
+        else:
+            DetectPosition()
+            DetectPrevAction(position)
+            PreflopRanges(myHand, handMy, position)
+            if inRange is None:
+                print("Fold this hand.")
+            else:
+                # determine to raise or fold
+                print("INSERT Call vs 3bet function here!")
+
+
+
     #i = 2
     #while i>1 :
     #    exec(open('GotCards.py').read())
