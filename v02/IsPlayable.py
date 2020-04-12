@@ -2,12 +2,13 @@ import DetectCards
 
 def IsPlayable(myHand):
     #myHand = myHand.strip("'")
-    UNIV_R = ["AAo","AKs","AQs","AJs","ATs","A9s","A8s","A7s","A6s","A5s","A4s","A3s","A2s","AKo", 
-             "KKo","KQs","KJs","KTs","K9s","K8s","K7s","K6s","K5s","K4s","AQo","KQo","QQo","QJs",
-             "QTs","Q9s","Q8s","Q7s","Q6s","AJo","KJo","QJo","JJo","JTs","J9s","J8s","J7s","ATo",
-             "KTo","QTo","JTo","TTo", "T9s","T8s","T7s","A9o","K9o","Q9o","J9o","T9o","99o","98s",
-             "97s","96s","A8o","88o","87s","86s","85s","A7o","77o","76s","75s","A6o","66o","65s",
-             "64s","A5o","55o","54s","53s","A4o","44o","43s","33o","22o"]
+    UNIV_R = ["AAo","AKs","KAs","AQs","QAs","AJs","JAs","ATs","TAs","A9s","9As","A8s","8As","A7s",
+              "7As","A6s","6As","A5s","5As","A4s","4As","A3s","3As","A2s","2As","AKo","KAo","KKo",
+              "KQs","QKs","KJs","JKs","KTs","TKs","K9s","9Ks","AQo","QAo","KQo","QKo","QQo","QJs",
+              "JQs","QTs","TQs","Q9s","9Qs","AJo","JAo","KJo","JKo","KTo","TKo","QJo","JQo","JJo",
+              "JTs","TJs","ATo","TAo","TTo","A9o","9Ao","T9s","9Ts","99o","A8o","8Ao","98s","89s",
+              "88o","A8o","8Ao","87s","78s","77o","76s","67s","66o","65s","56s","55o","A5o","5Ao",
+              "44o","A4o","4Ao","33o","A3o","3Ao","22o","A2o","2Ao"]
     print(myHand)
     if myHand in UNIV_R:
         isPlayable = True

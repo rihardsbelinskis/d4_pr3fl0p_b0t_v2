@@ -22,7 +22,7 @@ def main():
     isPlayable = IsPlayable(myHand)
     print(isPlayable)
     if not isPlayable:
-        print("Fold this hand.")
+        print("Fold")
     else:
         position = DetectPosition()
         DetectPrevAction(position)
