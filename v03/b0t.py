@@ -15,7 +15,7 @@ def main():
 
     card1 = ('card1.png')
     card2 = ('card2.png')
-    deck = ('deck5.png')
+    deck = ('../img/Deck5.png')
     
     GotCards()
     myHand = DetectCards(card1, card2, deck)

@@ -8,4 +8,5 @@ def GotCards():
         print("...waiting for a hand...")
         gotCards = pyautogui.pixel(1070, 628)
     else:
+        gotCards = pyautogui.pixel(1070, 628)
         return gotCards
