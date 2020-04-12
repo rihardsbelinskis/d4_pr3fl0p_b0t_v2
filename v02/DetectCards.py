@@ -1,4 +1,5 @@
 import GotCards
+import pyautogui
 
 def DetectCards(card1, card2, deck):
     card1_pos = pyautogui.locate(card1, deck, grayscale=False)
@@ -91,11 +92,9 @@ def DetectCards(card1, card2, deck):
         Suit = "o"
     
     myHand = []
-    handMy = []
 
     myHand = CardValue1+CardValue2+Suit
-    handMy = CardValue2+CardValue1+Suit
-
-    print(f'My hand is: {CardValue1}{CardValue2}{Suit}')
+    print(myHand)
+    #print(f'My hand is: {CardValue1}{CardValue2}{Suit}')
     
-    return(myHand, handMy)
+    return(myHand)

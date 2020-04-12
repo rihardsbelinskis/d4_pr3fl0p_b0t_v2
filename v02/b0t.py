@@ -1,8 +1,9 @@
-import GotCards
-import DetectCards
-import DetectPosition
-import DetectPrevAction
-import PreflopRanges
+from GotCards import GotCards
+from DetectCards import DetectCards
+from DetectPosition import DetectPosition
+from DetectPrevAction import DetectPrevAction
+from PreflopRanges import PreflopRanges
+from IsPlayable import IsPlayable
 import pyautogui        # not inherited ????
 
 
@@ -14,25 +15,23 @@ def main():
 
     card1 = ('card1.png')
     card2 = ('card2.png')
-    deck = ('/img/deck5.png')
-   
-    GotCards(card1, card2, deck)
-    if gotCards is None:
-        print("No hand dealt yet.")
+    deck = ('deck5.png')
+    
+    GotCards()
+    myHand = DetectCards(card1, card2, deck)
+    isPlayable = IsPlayable(myHand)
+    print(isPlayable)
+    if not isPlayable:
+        print("Fold this hand.")
     else:
-        DetectCards(card1, card2, deck)
-        IsPlayable(myHand, handMy)
-        if isPlayable is None:
+        position = DetectPosition()
+        DetectPrevAction(position)
+        inRange = PreflopRanges(myHand, position)
+        if not inRange:
             print("Fold this hand.")
         else:
-            DetectPosition()
-            DetectPrevAction(position)
-            PreflopRanges(myHand, handMy, position)
-            if inRange is None:
-                print("Fold this hand.")
-            else:
-                # determine to raise or fold
-                print("INSERT Call vs 3bet function here!")
+            # determine to raise or fold
+            print("INSERT Call vs 3bet function here!")
 
 
 

@@ -1,4 +1,5 @@
 import DetectPosition
+import pyautogui
 import time
     
 def DetectPrevAction(position):
