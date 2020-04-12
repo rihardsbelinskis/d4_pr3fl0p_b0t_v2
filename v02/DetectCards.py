@@ -5,7 +5,7 @@ def DetectCards(card1, card2, deck):
     Value1 = card1_pos[0]
     Suit1 = card1_pos[1]
     
-    card2_pos = pyautogui.locate(card2_pos, deck, grayscale=False)
+    card2_pos = pyautogui.locate(card2, deck, grayscale=False)
     Value2 = card2_pos[0]
     Suit2 = card2_pos[1]
 
@@ -20,7 +20,7 @@ def DetectCards(card1, card2, deck):
         CardValue1 = "5"
     elif Value1 == 281:
         CardValue1 = "6"
-    elif Value1 == 3511:
+    elif Value1 == 351:
         CardValue1 = "7"
     elif Value1 == 421:
         CardValue1 = "8"
@@ -58,7 +58,7 @@ def DetectCards(card1, card2, deck):
         CardValue2 = "5"
     elif Value2 == 281:
         CardValue2 = "6"
-    elif Value2 == 3511:
+    elif Value2 == 351:
         CardValue2 = "7"
     elif Value2 == 421:
         CardValue2 = "8"
