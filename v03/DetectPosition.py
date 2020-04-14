@@ -1,6 +1,7 @@
 from IsPlayable import *  
 
 def DetectPosition():
+
     dealerBTN1 = pyautogui.pixel(1284, 596)
     dealerBTN2 = pyautogui.pixel(840, 596)
     dealerBTN3 = pyautogui.pixel(563, 360)

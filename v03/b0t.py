@@ -6,6 +6,7 @@ from PreflopRanges import *
 from IsPlayable import *
 
 def main():
+
     im = pyautogui.screenshot(region=(1070, 628, 22, 49))
     im.save(r'card1.png')
     im = pyautogui.screenshot(region=(1162, 628, 22, 49))
@@ -18,18 +19,18 @@ def main():
     GotCards()
     myHand = DetectCards(card1, card2, deck)
     isPlayable = IsPlayable(myHand)
-    print(isPlayable)
     if not isPlayable:
-        print("Fold")
+        print("Hand is unplayable. Fold.")
     else:
         position = DetectPosition()
         DetectPrevAction(position)
         inRange = PreflopRanges(myHand, position)
         if not inRange:
-            print("Fold this hand.")
+            print("Hand not in range. Fold.")
         else:
             # determine to raise or fold
             print("INSERT Call vs 3bet function here!")
 
 if __name__ == "__main__":
+    
     main()

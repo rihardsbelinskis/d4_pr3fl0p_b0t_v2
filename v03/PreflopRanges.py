@@ -1,6 +1,7 @@
 from DetectCards import *
 
 def PreflopRanges(myHand, position):
+    
     UTG_RFI = ["AAo","AKs","KAs","AQs","QAs","AJs","JAs","ATs","TAs","A9s","9As","A8s","8As","A7s",
                "7As","A6s","6As","A5s","5As","A4s","4As","A3s","3As","A2s","2As","AKo","KAo","KKo",
                "KQs","QKs","KJs","JKs","KTs","TKs","K9s","9Ks","AQo","QAo","KQo","QKo","QQo","QJs",

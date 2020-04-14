@@ -2,6 +2,7 @@ import pyautogui
 import time
 
 def GotCards():
+    
     gotCards = pyautogui.pixel(1070, 628)
     while gotCards[0] == 0:
         time.sleep(1)

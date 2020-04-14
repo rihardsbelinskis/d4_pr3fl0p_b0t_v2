@@ -1,6 +1,9 @@
 from GotCards import *
 
 def DetectCards(card1, card2, deck):
+    
+    myHand = []
+    
     card1_pos = pyautogui.locate(card1, deck, grayscale=False)
     Value1 = card1_pos[0]
     Suit1 = card1_pos[1]
@@ -36,6 +39,8 @@ def DetectCards(card1, card2, deck):
         CardValue1 = "K"
     elif Value1 == 841:
         CardValue1 = "A"
+    else:
+        print("Error. Value of card 1 undetected!")
 
     #Suit of card 1
     if Suit1 == 1:
@@ -46,6 +51,8 @@ def DetectCards(card1, card2, deck):
         CardSuit1 = "d"
     elif Suit1 == 295:
         CardSuit1 = "h"
+    else:
+        print("Error. Suit of card 1 undetected!")
 
     #Value of card 2
     if Value2 == 1:
@@ -74,6 +81,8 @@ def DetectCards(card1, card2, deck):
         CardValue2 = "K"
     elif Value2 == 841:
         CardValue2 = "A"
+    else:
+        print("Error. Value of card 2 undetected!")
 
     #Suit of card 2
     if Suit2 == 1:
@@ -84,16 +93,16 @@ def DetectCards(card1, card2, deck):
         CardSuit2 = "d"
     elif Suit2 == 295:
         CardSuit2 = "h"
+    else:
+        print("Error. Suit of card 2 undetected!")
 
     if CardSuit1 == CardSuit2:
         Suit = "s"
     else:
         Suit = "o"
     
-    myHand = []
 
     myHand = CardValue1+CardValue2+Suit
-    print(myHand)
-    #print(f'My hand is: {CardValue1}{CardValue2}{Suit}')
-    
+    print(f'Dealt to Hero: {myHand}')
+
     return(myHand)

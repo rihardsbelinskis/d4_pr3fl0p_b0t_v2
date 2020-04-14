@@ -1,28 +1,9 @@
 from DetectPosition import *
 import time
+
+# THINK ABOUT ADDING "prevAction" variable, which determines what to do post-flop as well
     
 def DetectPrevAction(position):
-    # CHECK MY POSITION
-    dealerBTN1 = pyautogui.pixel(1284, 596)
-    dealerBTN2 = pyautogui.pixel(840, 596)
-    dealerBTN3 = pyautogui.pixel(563, 360)
-    dealerBTN4 = pyautogui.pixel(840, 222)
-    dealerBTN5 = pyautogui.pixel(1284, 222)
-    dealerBTN6 = pyautogui.pixel(1356, 360)
-
-    if dealerBTN1[0] == 5:
-        position = ("BTN")
-    elif dealerBTN2[0] == 5:
-        position = ("CO")
-    elif dealerBTN3[0] == 5:
-        position = ("MP")
-    elif dealerBTN4[0] == 5:
-        position = ("UTG")
-    elif dealerBTN5[0] == 5:
-        position = ("BB")
-    else:
-        position = ("SB")
-    print(f'I am sitting on: {position}')
 
     # CHECK IF THE ACTION IS ON ME
     checkBTN = (1, 1, 1)
@@ -32,7 +13,6 @@ def DetectPrevAction(position):
     time.sleep(3.1)
 
     # CHECK THE ACTION BEFORE ME
-    #speletaju action plate koordinates:
     Player1 = pyautogui.pixel(720, 779)
     Player2 = pyautogui.pixel(395, 466)
     Player3 = pyautogui.pixel(720, 183)
@@ -44,7 +24,8 @@ def DetectPrevAction(position):
     # 254 ir raise (oranzs)
     # 255 ir allin (sarkans)
     # 102 ir check/call (zals)
-    if position == "MP": # JA ES ATRODOS UZ MP############################
+
+    if position == "MP": 
         #UTG
         if Player5[0] == 102:
             print("UTG calls")
@@ -55,7 +36,7 @@ def DetectPrevAction(position):
         else:
             print("UTG folds")
 
-    if position == "CO": # JA ES ATRODOS UZ CO############################
+    if position == "CO":
         #UTG
         if Player4[0] == 102:
             print("UTG calls")
@@ -75,7 +56,7 @@ def DetectPrevAction(position):
         else:
             print("MP folds")
             
-    if position == "BTN": # JA ES ATRODOS UZ BTN##########################
+    if position == "BTN":
         #UTG
         if Player3[0] == 102:
             print("UTG calls")
@@ -104,7 +85,7 @@ def DetectPrevAction(position):
         else:
             print("CO folds")
 
-    if position == "SB": # JA ES ATRODOS UZ SB ##########################
+    if position == "SB": 
         #UTG
         if Player2[0] == 102:
             print("UTG calls")
@@ -142,7 +123,7 @@ def DetectPrevAction(position):
         else:
             print("BTN folds")
 
-    if position == "BB": # JA ES ATRODOS UZ BB ##########################
+    if position == "BB": 
         #UTG
         if Player1[0] == 102:
             print("UTG calls")

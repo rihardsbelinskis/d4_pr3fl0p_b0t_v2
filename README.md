@@ -1,7 +1,7 @@
 # d4_pr3fl0p_b0t_v2
 #### Authors: Rihards Belinskis, Kaspars Bregis
 
-#### Last update: April 12th, 2020.
+#### Last update: April 14th, 2020.
 
 Welcome to d4_pr3fl0p_b0t_v2 - the 2nd version of the r1_pr3fl0p_bot (the online poker preflop bot for 888 poker). The bot detects holecards, analyses position and makes a decision based on a given preflop range and the previous action at the table.
 
