@@ -1,5 +1,4 @@
-import pyautogui    # this should be discluded after IsPlayable is ready
-import IsPlayable  
+from IsPlayable import *  
 
 def DetectPosition():
     dealerBTN1 = pyautogui.pixel(1284, 596)

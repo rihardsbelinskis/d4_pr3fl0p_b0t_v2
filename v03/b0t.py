@@ -1,11 +1,9 @@
-from GotCards import GotCards
-from DetectCards import DetectCards
-from DetectPosition import DetectPosition
-from DetectPrevAction import DetectPrevAction
-from PreflopRanges import PreflopRanges
-from IsPlayable import IsPlayable
-import pyautogui        # not inherited ????
-
+from GotCards import *
+from DetectCards import *
+from DetectPosition import *
+from DetectPrevAction import *
+from PreflopRanges import *
+from IsPlayable import *
 
 def main():
     im = pyautogui.screenshot(region=(1070, 628, 22, 49))
@@ -32,15 +30,6 @@ def main():
         else:
             # determine to raise or fold
             print("INSERT Call vs 3bet function here!")
-
-
-
-    #i = 2
-    #while i>1 :
-    #    exec(open('GotCards.py').read())
-    #    exec(open('detectcards.py').read())
-    #    exec(open('detectprevaction.py').read())
-    #    i = 0
 
 if __name__ == "__main__":
     main()

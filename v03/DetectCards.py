@@ -1,5 +1,4 @@
-import GotCards
-import pyautogui
+from GotCards import *
 
 def DetectCards(card1, card2, deck):
     card1_pos = pyautogui.locate(card1, deck, grayscale=False)

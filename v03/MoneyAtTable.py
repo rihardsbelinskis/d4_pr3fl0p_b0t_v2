@@ -2,6 +2,7 @@ import pytesseract
 import pyautogui
 import cv2
 import numpy as np
+
 pytesseract.pytesseract.tesseract_cmd = r'C:\\Program Files\Tesseract-OCR\tesseract.exe'
 custom_config = r'--oem 3 --psm 6 outputbase digits'
 

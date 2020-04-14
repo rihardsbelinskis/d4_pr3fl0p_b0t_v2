@@ -1,4 +1,4 @@
-import DetectCards
+from DetectCards import *
 
 def IsPlayable(myHand):
     #myHand = myHand.strip("'")
