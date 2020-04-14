@@ -15,7 +15,7 @@ The bot follows the following structure (subject to change).
 * 6-max tables;
 * Bottom-right sitting position
 * Maximized poker window(-s, if all are cascaded on top, and maximized);
-* Third "deck" (see [this image](https://github.com/rihardsbelinskis/d4_pr3fl0p_b0t_v2/img/Deck5.png)) from the 888 Game Settings.
+* Third "deck" (see [this image](/img/Deck5.png?raw=true)) from the 888 Game Settings.
 
 ### Update history:
 * v0.1 - prototype version w/ main function (b0t.py), card detection, position detection and previous action detection. Also preflop hand ranges have been implemented.
