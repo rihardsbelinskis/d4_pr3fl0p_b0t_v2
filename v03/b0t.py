@@ -5,7 +5,7 @@ from DetectPrevAction import *
 from PreflopRanges import *
 from IsPlayable import *
 
-def main():
+def preflop():
 
     im = pyautogui.screenshot(region=(1070, 628, 22, 49))
     im.save(r'card1.png')
@@ -33,4 +33,4 @@ def main():
 
 if __name__ == "__main__":
     
-    main()
+    preflop()
