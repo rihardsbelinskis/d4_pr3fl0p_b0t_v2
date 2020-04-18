@@ -1,7 +1,7 @@
 # d4_pr3fl0p_b0t_v2
 #### Authors: Rihards Belinskis, Kaspars Bregis
 
-#### Last update: April 14th, 2020.
+#### Last update: April 18th, 2020.
 
 Welcome to d4_pr3fl0p_b0t_v2 - the 2nd version of the r1_pr3fl0p_bot (the online poker preflop bot for 888 poker). The bot detects holecards, analyses position and makes a decision based on a given preflop range and the previous action at the table.
 
@@ -21,6 +21,7 @@ The bot follows the following structure (subject to change).
 * v0.1 - prototype version w/ main function (b0t.py), card detection, position detection and previous action detection. Also preflop hand ranges have been implemented.
 * v0.2 - optimized, working version of v0.1.
 * v0.3 - detecting pot, putting b0t in an infinite loop and optimizing hand ranges.
+* v0.4 - adding flop play.
 
 ### Bug report:
 * v0.1 - previous action detection is incorrect (assumes all previous action has been a "fold" if sitting OOP).
